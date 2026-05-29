@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="description" content="Aditya Tiwari — Data Analyst & QA Automation Engineer. Expert in SQL, Power BI, Python, Selenium WebDriver, API Testing, and Agile SDLC. Open to opportunities in Mumbai & remote."/>
+  <meta name="keywords" content="Aditya Tiwari, Data Analyst, QA Automation Engineer, Selenium WebDriver, Power BI Developer, Python, SQL, API Testing, Regression Testing, STLC, SDLC, Agile, Mumbai, Software Tester, ETL, Dashboard Development"/>
+  <meta name="author" content="Aditya Tiwari"/>
+  <meta name="theme-color" content="#070b14"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Aditya Tiwari | Data Analyst & QA Automation Engineer"/>
+  <meta property="og:description" content="Turning Data Into Insights & Quality Into Experience. 2+ years at DataDevice. 95% test coverage. Power BI · SQL · Selenium · Python."/>
+  <meta property="og:url" content="https://adityatiwaricodes.github.io"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Aditya Tiwari | Data Analyst & QA Engineer"/>
+  <meta name="twitter:description" content="Turning Data Into Insights & Quality Into Experience."/>
+  <link rel="canonical" href="https://adityatiwaricodes.github.io"/>
+  <title>Aditya Tiwari | Data Analyst & QA Automation Engineer</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Aditya Tiwari","jobTitle":"Data Analyst & QA Automation Engineer","email":"adityatiwari.at2000@gmail.com","telephone":"+918766864054","url":"https://adityatiwaricodes.github.io","sameAs":["https://www.linkedin.com/in/aditya-tiwari-601306174","https://github.com/adityatiwaricodes"],"knowsAbout":["SQL","Python","Power BI","Tableau","Selenium WebDriver","API Testing","Data Analysis","QA Automation","Agile"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+/* THEME */
+:root{--purple:#7C3AED;--purple-l:#9d65f5;--cyan:#06B6D4;--amber:#F59E0B;--green:#10b981;--r:16px;--tr:.3s cubic-bezier(.4,0,.2,1)}
+[data-theme=dark]{--bg:#070b14;--bg2:#0c1018;--bg3:#111827;--sf:rgba(255,255,255,.035);--sf2:rgba(255,255,255,.065);--bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.14);--tx:#e8eaf0;--tx2:#c4c9d6;--mu:#6b7280;--gp:0 0 40px rgba(124,58,237,.28);--gc:0 0 40px rgba(6,182,212,.25);--nb:rgba(7,11,20,.78)}
+[data-theme=light]{--bg:#f7f9fc;--bg2:#eef1f8;--bg3:#e4e8f2;--sf:rgba(0,0,0,.03);--sf2:rgba(0,0,0,.06);--bd:rgba(0,0,0,.09);--bd2:rgba(0,0,0,.16);--tx:#0f172a;--tx2:#334155;--mu:#64748b;--gp:0 4px 24px rgba(124,58,237,.18);--gc:0 4px 24px rgba(6,182,212,.18);--nb:rgba(247,249,252,.85)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--purple) var(--bg2)}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;transition:background var(--tr),color var(--tr);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+::selection{background:rgba(124,58,237,.35);color:#fff}
+@media(hover:hover){body,a,button,[role=button]{cursor:none}}
+
+/* CURSOR */
+#cd,#cr{position:fixed;top:0;left:0;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);border-radius:50%}
+#cd{width:7px;height:7px;background:var(--cyan);mix-blend-mode:screen;transition:top .05s,left .05s}
+#cr{width:34px;height:34px;border:1.5px solid rgba(124,58,237,.55);transition:width .22s,height .22s,border-color .22s,top .18s cubic-bezier(.25,.46,.45,.94),left .18s cubic-bezier(.25,.46,.45,.94)}
+body.ch #cr{width:52px;height:52px;border-color:var(--cyan)}
+@media(hover:none){#cd,#cr{display:none}}
+
+/* SCROLL BAR */
+#sb{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--purple),var(--cyan));z-index:9998}
+
+/* LOADER */
+#loader{position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100000;transition:opacity .6s,visibility .6s}
+#loader.gone{opacity:0;visibility:hidden;pointer-events:none}
+.ld-logo{font-family:'Sora',sans-serif;font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1.75rem}
+.ld-t{width:180px;height:2px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden}
+.ld-f{height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));animation:ldf 1.9s ease forwards}
+@keyframes ldf{to{width:100%}}
+
+/* NOISE */
+#noise{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
+[data-theme=light] #noise{opacity:.012}
+
+/* NAV */
+#nav{position:fixed;top:1.25rem;left:50%;transform:translateX(-50%);z-index:1000;background:var(--nb);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--bd);border-radius:50px;padding:.6rem 1.25rem;display:flex;align-items:center;gap:.2rem;transition:box-shadow var(--tr),border-color var(--tr);max-width:calc(100vw - 2rem)}
+#nav:hover{box-shadow:0 0 32px rgba(124,58,237,.12)}
+.n-logo{font-family:'Sora',sans-serif;font-weight:800;font-size:.95rem;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-right:.85rem;flex-shrink:0}
+.n-links{display:flex;gap:.05rem;align-items:center}
+.n-links a{font-size:.75rem;font-weight:500;color:var(--mu);padding:.38rem .8rem;border-radius:50px;transition:color var(--tr),background var(--tr);white-space:nowrap}
+.n-links a:hover,.n-links a.act{color:var(--tx);background:var(--sf2)}
+.n-cta{background:linear-gradient(135deg,var(--purple),#5b21b6)!important;color:#fff!important;font-weight:600!important;margin-left:.4rem;box-shadow:0 0 20px rgba(124,58,237,.3)}
+.n-cta:hover{opacity:.9}
+.n-acts{display:flex;align-items:center;gap:.45rem;margin-left:.5rem}
+.n-ib{width:32px;height:32px;border-radius:50%;background:var(--sf);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--mu);transition:color var(--tr),border-color var(--tr),background var(--tr)}
+.n-ib:hover{color:var(--tx);border-color:var(--bd2);background:var(--sf2)}
+#hbg{display:none;flex-direction:column;gap:4.5px;background:none;border:none;padding:.4rem}
+#hbg span{display:block;width:20px;height:1.5px;background:var(--tx);border-radius:2px;transition:transform .3s,opacity .3s}
+#hbg.open span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+#hbg.open span:nth-child(2){opacity:0}
+#hbg.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+
+/* MOBILE MENU */
+#mm{position:fixed;inset:0;z-index:999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+#mm.open{transform:none}
+#mm a{font-family:'Sora',sans-serif;font-size:2rem;font-weight:700;color:var(--mu);transition:color var(--tr)}
+#mm a:hover{color:var(--tx)}
+#mm .mm-cta{font-size:1.1rem;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
+/* SECTIONS */
+section{padding:7rem 1.5rem;position:relative}
+.con{max-width:1080px;margin:0 auto}
+.stag{display:inline-flex;align-items:center;gap:.45rem;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.14em;color:var(--cyan);text-transform:uppercase;background:rgba(6,182,212,.08);border:1px solid rgba(6,182,212,.2);padding:.32rem .85rem;border-radius:50px;margin-bottom:1.2rem}
+.stitle{font-family:'Sora',sans-serif;font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;line-height:1.13;letter-spacing:-.03em;margin-bottom:1.1rem}
+.sdesc{color:var(--mu);line-height:1.8;max-width:540px;font-size:.93rem}
+.grad{background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
+/* REVEAL */
+.rev{opacity:0;transform:translateY(28px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
+.revL{opacity:0;transform:translateX(-28px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
+.revR{opacity:0;transform:translateX(28px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
+.rev.vis,.revL.vis,.revR.vis{opacity:1;transform:none}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.88rem;font-family:inherit;padding:.82rem 1.65rem;border-radius:50px;border:none;transition:transform var(--tr),box-shadow var(--tr),opacity var(--tr);white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.bp{background:linear-gradient(135deg,var(--purple),#5b21b6);color:#fff;box-shadow:0 0 28px rgba(124,58,237,.32)}
+.bp:hover{box-shadow:0 0 44px rgba(124,58,237,.52)}
+.bg{background:transparent;color:var(--tx);border:1px solid var(--bd)}
+.bg:hover{border-color:var(--cyan);background:rgba(6,182,212,.06)}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;padding:0 1.5rem;overflow:hidden}
+.hbg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 75% 75% at 50% 50%,black,transparent)}
+[data-theme=light] .hgrid{background-image:linear-gradient(rgba(0,0,0,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.04) 1px,transparent 1px)}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}
+.o1{width:560px;height:560px;background:rgba(124,58,237,.13);top:-15%;right:-8%;animation:fl 9s ease-in-out infinite}
+.o2{width:380px;height:380px;background:rgba(6,182,212,.09);bottom:0;left:-8%;animation:fl 11s ease-in-out infinite reverse}
+@keyframes fl{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-28px) scale(1.04)}}
+.hgl{position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(124,58,237,.3),rgba(6,182,212,.3),transparent)}
+.hi{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding-top:6rem}
+.hbdg{display:inline-flex;align-items:center;gap:.5rem;font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--cyan);border:1px solid rgba(6,182,212,.28);background:rgba(6,182,212,.06);padding:.38rem 1rem;border-radius:50px;margin-bottom:1.7rem;animation:fup .6s .2s both}
+.hdot{width:6px;height:6px;background:var(--cyan);border-radius:50%;animation:pu 1.5s infinite}
+@keyframes pu{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.35)}}
+.hname{font-family:'Sora',sans-serif;font-size:clamp(3rem,9vw,7rem);font-weight:800;line-height:.95;letter-spacing:-.04em;margin-bottom:.7rem;animation:fup .7s .35s both}
+.hname em{font-style:normal;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.htyped{font-family:'JetBrains Mono',monospace;font-size:clamp(.95rem,2.5vw,1.3rem);color:var(--mu);margin-bottom:1.4rem;min-height:2rem;animation:fup .7s .45s both}
+.tcur{display:inline-block;width:2px;height:1.1em;background:var(--cyan);margin-left:2px;vertical-align:text-bottom;animation:bl .8s step-end infinite}
+@keyframes bl{50%{opacity:0}}
+.htag{font-size:1.05rem;color:var(--mu);max-width:520px;line-height:1.75;margin-bottom:2.25rem;animation:fup .7s .55s both}
+.hcta{display:flex;gap:.85rem;flex-wrap:wrap;animation:fup .7s .65s both}
+.hsoc{display:flex;gap:.65rem;margin-top:2.25rem;animation:fup .7s .8s both}
+.hsi{width:40px;height:40px;border-radius:50%;border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:.82rem;color:var(--mu);transition:all var(--tr)}
+.hsi:hover{border-color:var(--purple);color:#fff;background:rgba(124,58,237,.15);transform:translateY(-3px)}
+.hsts{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--bd);flex-wrap:wrap;animation:fup .7s .95s both}
+.hsn{font-family:'Sora',sans-serif;font-size:2rem;font-weight:800;line-height:1;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hsl{font-size:.73rem;color:var(--mu);margin-top:.2rem}
+@keyframes fup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* ABOUT */
+#about{background:var(--bg2)}
+.ag{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:center}
+.avf{aspect-ratio:1;border-radius:24px;background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(6,182,212,.08));border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.avi{font-family:'Sora',sans-serif;font-size:5rem;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative;z-index:1}
+.avg{position:absolute;width:220px;height:220px;background:radial-gradient(circle,rgba(124,58,237,.25),transparent 70%);border-radius:50%;filter:blur(30px);animation:fl 6s ease-in-out infinite}
+.avbd{position:absolute;background:var(--bg);border:1px solid var(--bd2);border-radius:12px;padding:.55rem 1rem;display:flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:500;backdrop-filter:blur(12px);box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:2}
+.avbd.tr{top:-1rem;right:-1rem}
+.avbd.bl{bottom:-1rem;left:-1rem}
+.atx p{color:var(--mu);line-height:1.9;margin-bottom:1.1rem;font-size:.92rem}
+.atx p strong{color:var(--tx);font-weight:600}
+.atl{display:flex;flex-direction:column;gap:.85rem;margin-top:1.75rem}
+.tli{display:flex;gap:1rem;align-items:flex-start;background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:.95rem 1.15rem;transition:border-color var(--tr),transform var(--tr)}
+.tli:hover{border-color:rgba(124,58,237,.3);transform:translateX(4px)}
+.tld{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.82rem}
+.dp{background:rgba(124,58,237,.15);color:var(--purple)}
+.dc{background:rgba(6,182,212,.15);color:var(--cyan)}
+.tlt{font-size:.87rem;font-weight:600;margin-bottom:.15rem}
+.tls{font-size:.74rem;color:var(--mu)}
+
+/* SKILLS */
+.skh{text-align:center;margin-bottom:3.5rem}
+.skh .sdesc{margin:0 auto}
+.skc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.35rem}
+.skd{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);padding:1.65rem;transition:border-color var(--tr),transform var(--tr),box-shadow var(--tr);position:relative;overflow:hidden}
+.skd::after{content:'';position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at top left,rgba(124,58,237,.07),transparent 65%);transition:opacity var(--tr);pointer-events:none}
+.skd:hover{border-color:rgba(124,58,237,.38);transform:translateY(-4px);box-shadow:var(--gp)}
+.skd:hover::after{opacity:1}
+.ski{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:.95rem}
+.ip{background:rgba(124,58,237,.15);color:var(--purple)}
+.ic{background:rgba(6,182,212,.15);color:var(--cyan)}
+.ia{background:rgba(245,158,11,.15);color:var(--amber)}
+.ig{background:rgba(16,185,129,.15);color:var(--green)}
+.skt{font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:.9rem}
+.skts{display:flex;flex-wrap:wrap;gap:.35rem}
+.sktg{font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:500;padding:.27rem .65rem;border-radius:50px;background:var(--sf2);border:1px solid var(--bd);color:var(--mu);transition:color var(--tr),border-color var(--tr)}
+.skd:hover .sktg{color:var(--tx2);border-color:rgba(124,58,237,.28)}
+.skb{margin-top:3.5rem}
+.skb h3{font-family:'Sora',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:1.75rem}
+.bg2{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 3rem}
+.bi{margin-bottom:.4rem}
+.bh{display:flex;justify-content:space-between;margin-bottom:.45rem;font-size:.83rem}
+.bn{font-weight:500}
+.bp2{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--mu)}
+.bt{height:4px;background:var(--sf2);border-radius:4px;overflow:hidden}
+.bf{height:100%;border-radius:4px;width:0;background:linear-gradient(90deg,var(--purple),var(--cyan));transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+
+/* EXPERIENCE */
+#experience{background:var(--bg2)}
+.exg{display:grid;grid-template-columns:1fr 1.6fr;gap:4.5rem;align-items:start}
+.mts{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-top:1.85rem}
+.mt{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:1.15rem;text-align:center;transition:border-color var(--tr),transform var(--tr)}
+.mt:hover{border-color:rgba(6,182,212,.38);transform:translateY(-2px)}
+.mn{font-family:'Sora',sans-serif;font-size:1.85rem;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.ml{font-size:.68rem;color:var(--mu);margin-top:.2rem;line-height:1.4}
+.exc{background:var(--sf);border:1px solid var(--bd);border-radius:20px;padding:2.1rem;position:relative;overflow:hidden}
+.exc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--purple),var(--cyan))}
+.ext{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem}
+.exr{font-family:'Sora',sans-serif;font-size:1.2rem;font-weight:700;margin-bottom:.2rem}
+.exco{font-size:.88rem;color:var(--cyan);font-weight:500}
+.exd{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--mu);background:var(--sf2);border:1px solid var(--bd);padding:.35rem .8rem;border-radius:50px;white-space:nowrap}
+.rl{display:flex;flex-direction:column;gap:.55rem}
+.ri{display:flex;align-items:flex-start;gap:.75rem;font-size:.86rem;color:var(--mu);line-height:1.5}
+.ric{width:26px;height:26px;border-radius:6px;flex-shrink:0;margin-top:.05rem;background:rgba(124,58,237,.1);color:var(--purple);display:flex;align-items:center;justify-content:center;font-size:.65rem}
+
+/* PROJECTS */
+.ph{margin-bottom:3rem}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.6rem}
+.pc{background:var(--sf);border:1px solid var(--bd);border-radius:20px;padding:1.9rem;display:flex;flex-direction:column;transition:border-color var(--tr),transform var(--tr),box-shadow var(--tr);position:relative;overflow:hidden}
+.pc::before{content:'';position:absolute;inset:0;opacity:0;pointer-events:none;background:radial-gradient(ellipse at top right,rgba(6,182,212,.06),transparent 70%);transition:opacity var(--tr)}
+.pc:hover{border-color:rgba(6,182,212,.32);transform:translateY(-6px);box-shadow:var(--gc)}
+.pc:hover::before{opacity:1}
+.pi{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:1.15rem}
+.ptt{font-family:'Sora',sans-serif;font-size:1.08rem;font-weight:700;margin-bottom:.65rem}
+.pd{font-size:.85rem;color:var(--mu);line-height:1.7;flex:1;margin-bottom:1.35rem}
+.pts{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.35rem}
+.ptch{font-family:'JetBrains Mono',monospace;font-size:.62rem;font-weight:500;padding:.22rem .62rem;border-radius:50px;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.22);color:var(--purple)}
+.pl{display:flex;gap:.65rem}
+.pli{display:inline-flex;align-items:center;gap:.38rem;font-size:.78rem;font-weight:500;color:var(--mu);border:1px solid var(--bd);border-radius:8px;padding:.42rem .88rem;transition:color var(--tr),border-color var(--tr),background var(--tr)}
+.pli:hover{color:var(--cyan);border-color:var(--cyan);background:rgba(6,182,212,.06)}
+.fbdg{position:absolute;top:1.25rem;right:1.25rem;font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:700;padding:.22rem .62rem;border-radius:50px;letter-spacing:.08em;text-transform:uppercase;background:linear-gradient(135deg,var(--purple),var(--cyan));color:#fff}
+
+/* FINPULSE CARD */
+.fp-card{border-color:rgba(245,158,11,.18)!important}
+.fp-card:hover{border-color:rgba(245,158,11,.45)!important;box-shadow:0 0 40px rgba(245,158,11,.18)!important}
+.fp-live{background:linear-gradient(135deg,#F59E0B,#ef4444)!important}
+.fp-icon{background:rgba(245,158,11,.15);color:var(--amber)}
+.fp-metrics{display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:1.1rem}
+.fp-m{background:var(--sf2);border:1px solid var(--bd);border-radius:8px;padding:.45rem .8rem;text-align:center;min-width:60px}
+.fp-mn{font-family:'Sora',sans-serif;font-size:1.15rem;font-weight:800;line-height:1.1}
+.fp-ml{font-size:.65rem;color:var(--mu);margin-top:.15rem;white-space:nowrap}
+.fp-demo-btn{border-color:rgba(245,158,11,.4)!important;color:var(--amber)!important}
+.fp-demo-btn:hover{background:rgba(245,158,11,.08)!important;border-color:var(--amber)!important}
+
+/* OPENCART CARD */
+.oc-card{border-color:rgba(16,185,129,.18)!important}
+.oc-card:hover{border-color:rgba(16,185,129,.45)!important;box-shadow:0 0 40px rgba(16,185,129,.18)!important}
+.oc-card:hover::before{background:radial-gradient(ellipse at top right,rgba(16,185,129,.06),transparent 70%)!important}
+.oc-badge{background:linear-gradient(135deg,#10b981,#059669)!important}
+.oc-icon{background:rgba(16,185,129,.15);color:var(--green)}
+.ptch.oc-tech{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.25);color:var(--green)}
+.oc-arch{background:var(--sf2);border:1px solid var(--bd);border-radius:10px;padding:.9rem 1rem;margin-bottom:1.1rem}
+.oc-flow{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin-bottom:.65rem}
+.oc-node{font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:600;padding:.25rem .55rem;border-radius:6px;background:var(--sf);border:1px solid var(--bd);color:var(--tx2);white-space:nowrap}
+.oc-node-g{border-color:rgba(16,185,129,.4);color:var(--green);background:rgba(16,185,129,.08)}
+.oc-arrow{font-size:.55rem;color:var(--mu);flex-shrink:0}
+.oc-browsers{display:flex;gap:.75rem}
+.oc-br{font-size:.72rem;color:var(--mu);display:flex;align-items:center;gap:.3rem}
+.oc-br i{font-size:.85rem}
+/* GITHUB */
+#github{background:var(--bg2)}
+.ghg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.1rem;margin-top:2.5rem}
+.ghs{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:1.4rem;text-align:center;transition:border-color var(--tr),transform var(--tr)}
+.ghs:hover{border-color:rgba(124,58,237,.35);transform:translateY(-3px)}
+.ghn{font-family:'Sora',sans-serif;font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.ghl{font-size:.75rem;color:var(--mu);margin-top:.3rem}
+.ghr{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:2.5rem}
+.ghrc{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:1.2rem 1.4rem;transition:border-color var(--tr),transform var(--tr);display:flex;flex-direction:column;gap:.5rem}
+.ghrc:hover{border-color:rgba(6,182,212,.3);transform:translateY(-2px)}
+.ghrn{font-weight:600;font-size:.9rem;display:flex;align-items:center;gap:.5rem}
+.ghrn i{color:var(--mu);font-size:.8rem}
+.ghrd{font-size:.78rem;color:var(--mu);line-height:1.5}
+.ghrm{display:flex;gap:.85rem;margin-top:.3rem}
+.ghrl{font-family:'JetBrains Mono',monospace;font-size:.65rem;display:flex;align-items:center;gap:.3rem}
+.ld{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+/* EDUCATION */
+.edg{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:start}
+.edc{background:var(--sf);border:1px solid var(--bd);border-radius:20px;padding:1.9rem;position:relative;overflow:hidden;transition:border-color var(--tr),transform var(--tr)}
+.edc:hover{transform:translateY(-4px)}
+.edc.fe{border-color:rgba(124,58,237,.28)}
+.edc.fe::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--purple),var(--cyan))}
+.edy{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--mu);margin-bottom:.75rem}
+.edd{font-family:'Sora',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:.35rem}
+.eds{font-size:.83rem;color:var(--cyan);font-weight:500;margin-bottom:.2rem}
+.edg2{font-family:'Sora',sans-serif;font-size:2.4rem;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-top:.75rem}
+.edgl{font-size:.68rem;color:var(--mu);margin-top:.15rem}
+.edp{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
+.edpl{font-family:'JetBrains Mono',monospace;font-size:.65rem;padding:.25rem .65rem;border-radius:50px;background:var(--sf2);border:1px solid var(--bd);color:var(--mu)}
+
+/* CERTS */
+#certifications{background:var(--bg2)}
+.ceg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.15rem}
+.cec{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:1.4rem;display:flex;align-items:flex-start;gap:.9rem;transition:border-color var(--tr),transform var(--tr)}
+.cec:hover{border-color:rgba(245,158,11,.38);transform:translateY(-3px)}
+.cei{width:38px;height:38px;border-radius:10px;flex-shrink:0;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2);display:flex;align-items:center;justify-content:center;font-size:.95rem;color:var(--amber)}
+.cen{font-size:.85rem;font-weight:600;margin-bottom:.2rem}
+.ceb{font-size:.72rem;color:var(--mu)}
+
+/* RECRUITER */
+#recruiter{background:var(--bg);text-align:center;padding:5rem 1.5rem}
+.rci{max-width:680px;margin:0 auto;background:linear-gradient(135deg,rgba(124,58,237,.08),rgba(6,182,212,.05));border:1px solid rgba(124,58,237,.2);border-radius:28px;padding:3.5rem 2.5rem;position:relative;overflow:hidden}
+.rci::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.15),transparent 70%);filter:blur(40px);pointer-events:none}
+.rav{display:inline-flex;align-items:center;gap:.45rem;font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--green);border:1px solid rgba(16,185,129,.25);background:rgba(16,185,129,.07);padding:.32rem .85rem;border-radius:50px;margin-bottom:1.5rem}
+.rd{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pu 1.5s infinite;display:inline-block}
+.rtt{font-family:'Sora',sans-serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:.85rem}
+.rdc{color:var(--mu);line-height:1.7;margin-bottom:2rem;font-size:.92rem}
+.rbs{display:flex;gap:.85rem;justify-content:center;flex-wrap:wrap}
+.rtgs{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem}
+.rtg{font-family:'JetBrains Mono',monospace;font-size:.65rem;padding:.25rem .7rem;border-radius:50px;background:var(--sf2);border:1px solid var(--bd);color:var(--mu)}
+
+/* CONTACT */
+#contact{background:var(--bg2)}
+.cw{display:grid;grid-template-columns:1fr 1.25fr;gap:5rem;align-items:start}
+.cits{display:flex;flex-direction:column;gap:.85rem;margin-top:1.75rem}
+.cit{display:flex;align-items:center;gap:.95rem;background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:.95rem 1.15rem;transition:border-color var(--tr),transform var(--tr)}
+.cit:hover{border-color:rgba(124,58,237,.28);transform:translateX(4px)}
+.cico{width:34px;height:34px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+.clb{font-size:.68rem;color:var(--mu);margin-bottom:.1rem}
+.cvl{font-size:.85rem;font-weight:500}
+.cf{display:flex;flex-direction:column;gap:.9rem}
+.fg{display:flex;flex-direction:column;gap:.38rem}
+.fg label{font-size:.76rem;font-weight:500;color:var(--mu)}
+.fg input,.fg textarea{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:.82rem 1rem;color:var(--tx);font-family:inherit;font-size:.86rem;outline:none;resize:none;transition:border-color var(--tr),box-shadow var(--tr)}
+.fg input:focus,.fg textarea:focus{border-color:rgba(124,58,237,.48);box-shadow:0 0 0 3px rgba(124,58,237,.1)}
+.fg input::placeholder,.fg textarea::placeholder{color:var(--mu)}
+.fgr{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.csub{width:100%;display:flex;align-items:center;justify-content:center;gap:.5rem;background:linear-gradient(135deg,var(--purple),#5b21b6);color:#fff;font-family:inherit;font-size:.9rem;font-weight:600;padding:.9rem;border-radius:50px;border:none;box-shadow:0 0 28px rgba(124,58,237,.3);transition:transform var(--tr),box-shadow var(--tr),opacity var(--tr)}
+.csub:hover{transform:translateY(-2px);box-shadow:0 0 44px rgba(124,58,237,.5)}
+.csub:disabled{opacity:.6;transform:none}
+#fmsg{display:none;text-align:center;font-size:.84rem;padding:.7rem;border-radius:10px;margin-top:.25rem}
+#fmsg.ok{color:var(--green);background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);display:block}
+#fmsg.er{color:#f87171;background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.2);display:block}
+
+/* AI WIDGET */
+#aib{position:fixed;bottom:1.75rem;right:1.75rem;z-index:500;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--cyan));border:none;color:#fff;font-size:1.25rem;box-shadow:0 0 30px rgba(124,58,237,.4);transition:transform var(--tr),box-shadow var(--tr);display:flex;align-items:center;justify-content:center}
+#aib:hover{transform:scale(1.08);box-shadow:0 0 48px rgba(124,58,237,.6)}
+#aip{position:fixed;bottom:5.5rem;right:1.75rem;z-index:500;width:340px;max-height:480px;background:var(--bg2);border:1px solid var(--bd2);border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.5);transform:scale(.9) translateY(12px);opacity:0;pointer-events:none;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s;display:flex;flex-direction:column}
+#aip.open{transform:none;opacity:1;pointer-events:auto}
+.aih{padding:1rem 1.25rem;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;background:linear-gradient(135deg,rgba(124,58,237,.1),rgba(6,182,212,.06))}
+.aihi{display:flex;align-items:center;gap:.65rem}
+.aiav{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--cyan));display:flex;align-items:center;justify-content:center;font-size:.85rem;color:#fff}
+.aihn{font-family:'Sora',sans-serif;font-size:.88rem;font-weight:700}
+.aihs{font-size:.65rem;color:var(--green);display:flex;align-items:center;gap:.3rem}
+.aisc{background:none;border:none;color:var(--mu);font-size:.9rem;transition:color var(--tr)}
+.aisc:hover{color:var(--tx)}
+.aim{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.75rem;scrollbar-width:thin;scrollbar-color:var(--bd) transparent}
+.aimm{max-width:85%;font-size:.8rem;line-height:1.55;padding:.65rem .9rem;border-radius:14px}
+.aimm.bot{background:var(--sf);border:1px solid var(--bd);align-self:flex-start;border-bottom-left-radius:4px}
+.aimm.usr{background:linear-gradient(135deg,var(--purple),#5b21b6);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.ait{display:flex;gap:4px;padding:.65rem .9rem;align-self:flex-start}
+.ait span{width:6px;height:6px;background:var(--mu);border-radius:50%;animation:tb .9s ease infinite}
+.ait span:nth-child(2){animation-delay:.15s}
+.ait span:nth-child(3){animation-delay:.3s}
+@keyframes tb{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+.aif{padding:.75rem 1rem;border-top:1px solid var(--bd);display:flex;gap:.5rem}
+#aii{flex:1;background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:.55rem .85rem;color:var(--tx);font-family:inherit;font-size:.8rem;outline:none;transition:border-color var(--tr)}
+#aii:focus{border-color:rgba(124,58,237,.45)}
+#aii::placeholder{color:var(--mu)}
+#ais{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--purple),var(--cyan));border:none;color:#fff;font-size:.8rem;transition:transform var(--tr);display:flex;align-items:center;justify-content:center}
+#ais:hover{transform:scale(1.08)}
+.aich{display:flex;flex-wrap:wrap;gap:.4rem;padding:.5rem 1rem .25rem}
+.aicp{font-size:.68rem;background:var(--sf2);border:1px solid var(--bd);color:var(--mu);border-radius:50px;padding:.22rem .65rem;transition:color var(--tr),border-color var(--tr)}
+.aicp:hover{color:var(--tx);border-color:var(--purple)}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--bd);padding:2.25rem 1.5rem}
+.fti{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.ftl{font-family:'Sora',sans-serif;font-size:1.05rem;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.ftls{display:flex;gap:1.4rem;flex-wrap:wrap}
+.ftls a{font-size:.76rem;color:var(--mu);transition:color var(--tr)}
+.ftls a:hover{color:var(--tx)}
+.ftc{max-width:1080px;margin:.85rem auto 0;font-size:.72rem;color:var(--mu);border-top:1px solid var(--bd);padding-top:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+
+/* MOBILE CTA */
+#mcta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:800;background:var(--bg2);border-top:1px solid var(--bd);padding:.75rem 1.25rem;gap:.65rem;align-items:center;backdrop-filter:blur(16px)}
+#mcta a{flex:1;text-align:center;padding:.72rem;border-radius:50px;font-size:.82rem;font-weight:600}
+#mcta .mh{background:linear-gradient(135deg,var(--purple),var(--cyan));color:#fff}
+#mcta .mc{border:1px solid var(--bd);color:var(--tx)}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .n-links{display:none}
+  #hbg{display:flex}
+  .ag,.exg,.cw{grid-template-columns:1fr;gap:2.75rem}
+  .av-vis{max-width:280px;margin:0 auto}
+  .edg{grid-template-columns:1fr}
+  #mcta{display:flex}
+  body{padding-bottom:4.5rem}
+  #aib{bottom:5.5rem}
+  #aip{bottom:9.25rem;right:1rem;width:calc(100vw - 2rem)}
+  .bg2{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  section{padding:4.5rem 1.15rem}
+  .hname{font-size:clamp(2.6rem,11vw,4.5rem)}
+  .hsts{gap:1.5rem}
+  .fgr{grid-template-columns:1fr}
+  .mts{grid-template-columns:1fr 1fr}
+  .rci{padding:2.25rem 1.5rem}
+}
+@media(min-width:1400px){.con{max-width:1200px}}
+</style>
+</head>
+<body>
+<div id="cd" aria-hidden="true"></div>
+<div id="cr" aria-hidden="true"></div>
+<div id="sb" aria-hidden="true" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+<div id="noise" aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">AT.</div>
+  <div class="ld-t"><div class="ld-f"></div></div>
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mm" role="dialog" aria-label="Navigation menu" aria-modal="true">
+  <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
+  <a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  <a href="#contact" class="mm-cta">Hire Me →</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav" aria-label="Main navigation">
+  <span class="n-logo">AT.</span>
+  <div class="n-links">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
+    <a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <a href="#contact" class="n-cta">Hire Me</a>
+  </div>
+  <div class="n-acts">
+    <button class="n-ib" id="tthm" aria-label="Toggle light/dark theme" title="Toggle theme">
+      <i class="fas fa-moon" id="thi"></i>
+    </button>
+    <button id="hbg" aria-label="Open menu" aria-expanded="false" aria-controls="mm">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hbg" aria-hidden="true">
+    <div class="hgrid"></div>
+    <div class="orb o1"></div><div class="orb o2"></div>
+    <div class="hgl"></div>
+  </div>
+  <div class="hi">
+    <div class="hbdg" role="status"><span class="hdot" aria-hidden="true"></span>Available for Opportunities</div>
+    <h1 class="hname" id="hero-heading">Aditya<br/><em>Tiwari</em></h1>
+    <p class="htyped" aria-live="polite"><span id="tt"></span><span class="tcur" aria-hidden="true"></span></p>
+    <p class="htag">Turning Data Into Insights &amp; Quality Into Experience. Analyst, automation engineer, and builder with a bias for measurable results.</p>
+    <div class="hcta">
+      <a href="#projects" class="btn bp"><i class="fas fa-rocket" aria-hidden="true"></i> View Projects</a>
+      <a href="Aditya_Tiwari_2026.pdf" download="Aditya_Tiwari_2026.pdf" class="btn bg"><i class="fas fa-download" aria-hidden="true"></i> Download CV</a>
+    </div>
+    <div class="hsoc" aria-label="Social links">
+      <a href="https://www.linkedin.com/in/aditya-tiwari-601306174" target="_blank" rel="noopener noreferrer" class="hsi" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/adityatiwaricodes" target="_blank" rel="noopener noreferrer" class="hsi" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+      <a href="mailto:adityatiwari.at2000@gmail.com" class="hsi" aria-label="Send email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="hsts" aria-label="Key metrics">
+      <div><div class="hsn" data-count="2">0</div><div class="hsl">Years Experience</div></div>
+      <div><div class="hsn" data-count="25" data-suf="%">0</div><div class="hsl">Faster Testing</div></div>
+      <div><div class="hsn" data-count="95" data-suf="%">0</div><div class="hsl">Test Coverage</div></div>
+      <div><div class="hsn" data-count="10" data-suf="+">0</div><div class="hsl">Technologies</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About Aditya">
+  <div class="con">
+    <div class="ag">
+      <div class="revL" style="position:relative">
+        <div class="avf">
+          <div class="avg" aria-hidden="true"></div>
+          <div class="avi" aria-label="Aditya Tiwari initials">AT</div>
+        </div>
+        <div class="avbd tr"><i class="fas fa-circle" style="color:var(--green);font-size:.55rem" aria-hidden="true"></i> Open to Work</div>
+        <div class="avbd bl"><i class="fas fa-map-marker-alt" style="color:var(--cyan)" aria-hidden="true"></i> Mumbai, India</div>
+      </div>
+      <div class="atx revR">
+        <div class="stag"><i class="fas fa-user-circle" aria-hidden="true"></i> About Me</div>
+        <h2 class="stitle">Where Data Meets <span class="grad">Quality</span></h2>
+        <p>I'm <strong>Aditya Tiwari</strong> — a detail-driven professional at the intersection of <strong>Data Analytics</strong> and <strong>QA Automation</strong>. My Mathematics background sharpens analytical thinking; 2+ years of engineering experience keeps me grounded in what actually ships.</p>
+        <p>At <strong>DataDevice</strong>, I design automation frameworks that cut testing cycles by 25% while boosting product quality by 15%. In parallel, I build Power BI dashboards, SQL pipelines, and Python analyses that help teams make faster decisions.</p>
+        <p>Currently completing my <strong>MCA at Jain University</strong> (CGPA 9.30/10) and actively seeking roles where analytics and quality engineering converge.</p>
+        <div class="atl" role="list" aria-label="Career timeline">
+          <div class="tli" role="listitem">
+            <div class="tld dp" aria-hidden="true"><i class="fas fa-briefcase"></i></div>
+            <div><div class="tlt">QA Automation Tester — DataDevice</div><div class="tls">Feb 2023 – Present · Mumbai</div></div>
+          </div>
+          <div class="tli" role="listitem">
+            <div class="tld dc" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+            <div><div class="tlt">MCA — Jain University, Bengaluru</div><div class="tls">2024 – 2026 · CGPA: 9.30 / 10.0</div></div>
+          </div>
+          <div class="tli" role="listitem">
+            <div class="tld dp" aria-hidden="true"><i class="fas fa-calculator"></i></div>
+            <div><div class="tlt">BSc Mathematics — Thakur College, Mumbai</div><div class="tls">2019 – 2022 · CGPA: 7.57 / 10.0</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-label="Skills and technologies">
+  <div class="con">
+    <div class="skh rev">
+      <div class="stag"><i class="fas fa-code" aria-hidden="true"></i> Technical Stack</div>
+      <h2 class="stitle">Skills &amp; <span class="grad">Technologies</span></h2>
+      <p class="sdesc">A production-tested stack spanning data engineering, BI, QA automation, and Agile delivery.</p>
+    </div>
+    <div class="skc">
+      <div class="skd rev"><div class="ski ip" aria-hidden="true"><i class="fas fa-code"></i></div><div class="skt">Programming &amp; Data</div><div class="skts"><span class="sktg">Python</span><span class="sktg">SQL</span><span class="sktg">MySQL</span><span class="sktg">SQL Server</span><span class="sktg">Pandas</span><span class="sktg">ETL</span></div></div>
+      <div class="skd rev"><div class="ski ic" aria-hidden="true"><i class="fas fa-chart-bar"></i></div><div class="skt">Analytics &amp; BI</div><div class="skts"><span class="sktg">Power BI</span><span class="sktg">DAX</span><span class="sktg">Tableau</span><span class="sktg">Excel</span><span class="sktg">Matplotlib</span><span class="sktg">Seaborn</span></div></div>
+      <div class="skd rev"><div class="ski ig" aria-hidden="true"><i class="fas fa-vial"></i></div><div class="skt">QA &amp; Test Automation</div><div class="skts"><span class="sktg">Selenium WebDriver</span><span class="sktg">API Testing</span><span class="sktg">Functional Testing</span><span class="sktg">Regression Testing</span><span class="sktg">STLC</span><span class="sktg">SDLC</span><span class="sktg">TestNG</span><span class="sktg">Cucumber BDD</span><span class="sktg">Java</span></div></div>
+      <div class="skd rev"><div class="ski ia" aria-hidden="true"><i class="fas fa-tools"></i></div><div class="skt">DevOps &amp; Workflow</div><div class="skts"><span class="sktg">Jenkins</span><span class="sktg">JIRA</span><span class="sktg">Git / GitHub</span><span class="sktg">Agile / Scrum</span><span class="sktg">REST APIs</span><span class="sktg">EDA</span><span class="sktg">Docker</span><span class="sktg">Selenium Grid</span><span class="sktg">Maven</span></div></div>
+    </div>
+    <div class="skb rev">
+      <h3>Proficiency Levels</h3>
+      <div class="bg2">
+        <div class="bi"><div class="bh"><span class="bn">SQL &amp; Database Design</span><span class="bp2">90%</span></div><div class="bt"><div class="bf" data-w="90"></div></div></div>
+        <div class="bi"><div class="bh"><span class="bn">Power BI / Tableau</span><span class="bp2">85%</span></div><div class="bt"><div class="bf" data-w="85"></div></div></div>
+        <div class="bi"><div class="bh"><span class="bn">Python — Pandas, EDA</span><span class="bp2">80%</span></div><div class="bt"><div class="bf" data-w="80"></div></div></div>
+        <div class="bi"><div class="bh"><span class="bn">Selenium WebDriver</span><span class="bp2">82%</span></div><div class="bt"><div class="bf" data-w="82"></div></div></div>
+        <div class="bi"><div class="bh"><span class="bn">API Testing</span><span class="bp2">78%</span></div><div class="bt"><div class="bf" data-w="78"></div></div></div>
+        <div class="bi"><div class="bh"><span class="bn">Agile / JIRA</span><span class="bp2">88%</span></div><div class="bt"><div class="bf" data-w="88"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" aria-label="Work experience">
+  <div class="con">
+    <div class="exg">
+      <div class="rev">
+        <div class="stag"><i class="fas fa-briefcase" aria-hidden="true"></i> Work</div>
+        <h2 class="stitle">Real-World <span class="grad">Impact</span></h2>
+        <p class="sdesc">Measurable outcomes through systematic QA, automation, and data-driven engineering.</p>
+        <div class="mts">
+          <div class="mt"><div class="mn" data-count="25" data-suf="%">0</div><div class="ml">Reduction in Testing Time</div></div>
+          <div class="mt"><div class="mn" data-count="15" data-suf="%">0</div><div class="ml">Fewer Customer Issues</div></div>
+          <div class="mt"><div class="mn" data-count="20" data-suf="%">0</div><div class="ml">Test Coverage Growth</div></div>
+          <div class="mt"><div class="mn" data-count="95" data-suf="%">0</div><div class="ml">Overall Test Coverage</div></div>
+        </div>
+      </div>
+      <div class="exc rev">
+        <div class="ext">
+          <div><div class="exr">Software Quality Assurance Tester</div><div class="exco">DataDevice · Mumbai</div></div>
+          <div class="exd">Feb 2023 – Present</div>
+        </div>
+        <ul class="rl" aria-label="Responsibilities">
+          <li class="ri"><div class="ric" aria-hidden="true"><i class="fas fa-robot"></i></div>Designed and executed manual &amp; automated test cases for web and mobile applications</li>
+          <li class="ri"><div class="ric" aria-hidden="true"><i class="fas fa-flask"></i></div>Conducted functional, regression, and UI testing across the full SDLC lifecycle</li>
+          <li class="ri"><div class="ric" aria-hidden="true"><i class="fas fa-users"></i></div>Actively participated in Agile ceremonies — sprint planning, standups, retrospectives</li>
+          <li class="ri"><div class="ric" aria-hidden="true"><i class="fas fa-bug"></i></div>Identified and tracked defects in JIRA, reducing testing time by 25%</li>
+          <li class="ri"><div class="ric" aria-hidden="true"><i class="fas fa-shield-alt"></i></div>Achieved 95% overall test coverage ensuring robust software quality</li>
+          <li class="ri"><div class="ric" aria-hidden="true"><i class="fas fa-chart-line"></i></div>Improved product quality, resulting in 15% decrease in customer-reported issues</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" aria-label="Featured projects">
+  <div class="con">
+    <div class="ph rev">
+      <div class="stag"><i class="fas fa-rocket" aria-hidden="true"></i> Portfolio</div>
+      <h2 class="stitle">Featured <span class="grad">Projects</span></h2>
+      <p class="sdesc">End-to-end builds across data engineering, BI development, fintech analytics, and enterprise QA automation.</p>
+    </div>
+    <div class="pg">
+      <article class="pc rev">
+        <div class="fbdg" aria-label="Featured project">★ Featured</div>
+        <div class="pi ip" aria-hidden="true"><i class="fas fa-database"></i></div>
+        <h3 class="ptt">HR Database Management System</h3>
+        <p class="pd">Architected a relational database managing employee records, departmental hierarchies, and salary data. Implemented complex joins, correlated subqueries, normalization to 3NF, and query optimization — delivering measurable improvements in retrieval performance and referential integrity.</p>
+        <div class="pts"><span class="ptch">SQL</span><span class="ptch">MySQL</span><span class="ptch">Normalization</span><span class="ptch">Query Optimization</span><span class="ptch">Database Design</span></div>
+        <div class="pl"><a href="https://github.com/adityatiwaricodes/HR-Database-Management-System-Using-SQL" target="_blank" rel="noopener noreferrer" class="pli"><i class="fab fa-github" aria-hidden="true"></i> View on GitHub</a></div>
+      </article>
+      <article class="pc rev">
+        <div class="fbdg" aria-label="Featured project">★ Featured</div>
+        <div class="pi ic" aria-hidden="true"><i class="fas fa-chart-pie"></i></div>
+        <h3 class="ptt">Sales Analysis Dashboard</h3>
+        <p class="pd">Built an interactive Power BI dashboard delivering real-time KPI visibility and regional sales trends. Leveraged DAX measures, dynamic filters, and drill-through reports to transform raw transactional data into executive-level insights enabling data-driven decisions.</p>
+        <div class="pts"><span class="ptch">Power BI</span><span class="ptch">DAX</span><span class="ptch">Data Modeling</span><span class="ptch">Excel</span><span class="ptch">KPI Design</span></div>
+        <div class="pl"><a href="https://github.com/adityatiwaricodes/sales-analysis-dashboard" target="_blank" rel="noopener noreferrer" class="pli"><i class="fab fa-github" aria-hidden="true"></i> View on GitHub</a></div>
+      </article>
+
+      <article class="pc rev fp-card">
+        <div class="fbdg fp-live">⚡ Live</div>
+        <div class="pi fp-icon" aria-hidden="true"><i class="fas fa-bolt"></i></div>
+        <h3 class="ptt">FinPulse — Market Intelligence Dashboard</h3>
+        <p class="pd">Production-grade fintech analytics platform for real-time crypto intelligence. Built with concurrent multi-threaded API fetching (ThreadPoolExecutor), it delivers Bollinger Bands, RSI, a 7-day asset correlation matrix, Fear &amp; Greed sentiment tracking, Bitcoin hashrate, live news via RSS, and a persistent session watchlist — all inside a Bloomberg-inspired dark UI with a live ticker tape.</p>
+        <div class="fp-metrics">
+          <div class="fp-m"><div class="fp-mn" style="color:var(--amber)">80%</div><div class="fp-ml">Fewer API Calls</div></div>
+          <div class="fp-m"><div class="fp-mn" style="color:var(--green)">5min</div><div class="fp-ml">Cache TTL</div></div>
+          <div class="fp-m"><div class="fp-mn" style="color:var(--cyan)">4</div><div class="fp-ml">Parallel Threads</div></div>
+          <div class="fp-m"><div class="fp-mn" style="color:var(--purple)">50</div><div class="fp-ml">Assets Tracked</div></div>
+        </div>
+        <div class="pts">
+          <span class="ptch">Python</span><span class="ptch">Streamlit</span><span class="ptch">Plotly</span>
+          <span class="ptch">Pandas</span><span class="ptch">ThreadPoolExecutor</span><span class="ptch">REST APIs</span>
+          <span class="ptch">Bollinger Bands</span><span class="ptch">RSI</span><span class="ptch">Data Visualization</span>
+        </div>
+        <div class="pl">
+          <a href="https://finpulse-dashboard-6tsbgtgxzrwsl4bwetbf5a.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pli fp-demo-btn">
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+          </a>
+          <a href="https://github.com/adityatiwaricodes/finpulse-zorvyn" target="_blank" rel="noopener noreferrer" class="pli">
+            <i class="fab fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </div>
+      </article>
+
+      <article class="pc rev oc-card">
+        <div class="fbdg oc-badge">🤖 Automation</div>
+        <div class="pi oc-icon" aria-hidden="true"><i class="fas fa-vial"></i></div>
+        <h3 class="ptt">Opencart Hybrid Automation Framework</h3>
+        <p class="pd">Enterprise-grade Hybrid Test Automation Framework for an Opencart e-commerce application, combining Selenium WebDriver, TestNG, and Cucumber (BDD) with a full DevOps pipeline. Features Dockerized Selenium Grid for parallel cross-browser execution, Jenkins CI/CD integration, Log4j2 logging, and Extent Reports — demonstrating a professional SDET-level automation architecture.</p>
+        <div class="oc-arch">
+          <div class="oc-flow">
+            <span class="oc-node">GitHub</span>
+            <i class="fas fa-arrow-right oc-arrow"></i>
+            <span class="oc-node">Jenkins</span>
+            <i class="fas fa-arrow-right oc-arrow"></i>
+            <span class="oc-node">Maven</span>
+            <i class="fas fa-arrow-right oc-arrow"></i>
+            <span class="oc-node oc-node-g">Selenium Grid</span>
+            <i class="fas fa-arrow-right oc-arrow"></i>
+            <span class="oc-node">Docker</span>
+          </div>
+          <div class="oc-browsers">
+            <span class="oc-br"><i class="fab fa-chrome"></i> Chrome</span>
+            <span class="oc-br"><i class="fab fa-firefox"></i> Firefox</span>
+            <span class="oc-br"><i class="fab fa-edge"></i> Edge</span>
+          </div>
+        </div>
+        <div class="pts">
+          <span class="ptch oc-tech">Java</span><span class="ptch oc-tech">Selenium WebDriver</span>
+          <span class="ptch oc-tech">TestNG</span><span class="ptch oc-tech">Cucumber BDD</span>
+          <span class="ptch oc-tech">Maven</span><span class="ptch oc-tech">Docker</span>
+          <span class="ptch oc-tech">Jenkins CI/CD</span><span class="ptch oc-tech">Selenium Grid</span>
+          <span class="ptch oc-tech">Log4j2</span><span class="ptch oc-tech">Extent Reports</span>
+        </div>
+        <div class="pl">
+          <a href="https://github.com/adityatiwaricodes/OpencartV1.0" target="_blank" rel="noopener noreferrer" class="pli">
+            <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="github" aria-label="GitHub activity">
+  <div class="con">
+    <div class="rev" style="margin-bottom:1.5rem">
+      <div class="stag"><i class="fab fa-github" aria-hidden="true"></i> GitHub</div>
+      <h2 class="stitle">Open Source <span class="grad">Activity</span></h2>
+    </div>
+    <div class="ghg">
+      <div class="ghs rev"><div class="ghn" data-count="4">0</div><div class="ghl">Public Repositories</div></div>
+      <div class="ghs rev"><div class="ghn" data-count="95" data-suf="%">0</div><div class="ghl">Code Coverage</div></div>
+      <div class="ghs rev"><div class="ghn" data-count="2" data-suf="+">0</div><div class="ghl">Years on GitHub</div></div>
+      <div class="ghs rev"><div class="ghn" data-count="100" data-suf="%">0</div><div class="ghl">Projects Documented</div></div>
+    </div>
+    <div class="ghr">
+      <a href="https://github.com/adityatiwaricodes/HR-Database-Management-System-Using-SQL" target="_blank" rel="noopener noreferrer" class="ghrc rev">
+        <div class="ghrn"><i class="fas fa-book" aria-hidden="true"></i> HR-Database-Management-System</div>
+        <div class="ghrd">Relational database system for HR data using advanced SQL</div>
+        <div class="ghrm"><span class="ghrl"><span class="ld" style="background:#e38c00"></span>SQL</span></div>
+      </a>
+      <a href="https://github.com/adityatiwaricodes/sales-analysis-dashboard" target="_blank" rel="noopener noreferrer" class="ghrc rev">
+        <div class="ghrn"><i class="fas fa-book" aria-hidden="true"></i> sales-analysis-dashboard</div>
+        <div class="ghrd">Interactive Power BI dashboard for KPI and regional sales analysis</div>
+        <div class="ghrm"><span class="ghrl"><span class="ld" style="background:#f1c40f"></span>Power BI</span></div>
+      </a>
+      <a href="https://github.com/adityatiwaricodes/finpulse-zorvyn" target="_blank" rel="noopener noreferrer" class="ghrc rev" style="border-color:rgba(245,158,11,.2)">
+        <div class="ghrn"><i class="fas fa-bolt" style="color:var(--amber)"></i> finpulse-zorvyn</div>
+        <div class="ghrd">Real-time fintech dashboard · Bollinger Bands · RSI · Correlation Matrix · Streamlit</div>
+        <div class="ghrm"><span class="ghrl"><span class="ld" style="background:#3776AB"></span>Python</span><span class="ghrl"><span class="ld" style="background:#FF4B4B"></span>Streamlit</span></div>
+      </a>
+      <a href="https://github.com/adityatiwaricodes/OpencartV1.0" target="_blank" rel="noopener noreferrer" class="ghrc rev" style="border-color:rgba(16,185,129,.2)">
+        <div class="ghrn"><i class="fas fa-vial" style="color:var(--green)"></i> OpencartV1.0</div>
+        <div class="ghrd">Hybrid Selenium + BDD automation framework · Docker Grid · Jenkins CI/CD · TestNG</div>
+        <div class="ghrm"><span class="ghrl"><span class="ld" style="background:#b07219"></span>Java</span><span class="ghrl"><span class="ld" style="background:#43A047"></span>TestNG</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" aria-label="Education">
+  <div class="con">
+    <div class="rev" style="margin-bottom:3rem">
+      <div class="stag"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Academics</div>
+      <h2 class="stitle">Educational <span class="grad">Background</span></h2>
+    </div>
+    <div class="edg">
+      <div class="edc fe rev">
+        <div class="edy">CURRENT · 2024 – 2026</div>
+        <div class="edd">Master of Computer Applications (MCA)</div>
+        <div class="eds">Jain University, Bengaluru, Karnataka</div>
+        <div class="edg2">9.30</div><div class="edgl">CGPA / 10.0</div>
+        <div class="edp"><span class="edpl">High Distinction</span><span class="edpl">Computer Science</span></div>
+      </div>
+      <div class="edc rev">
+        <div class="edy">COMPLETED · 2019 – 2022</div>
+        <div class="edd">Bachelor of Science — Mathematics</div>
+        <div class="eds">Thakur College of Science &amp; Commerce, Mumbai</div>
+        <div class="edg2" style="font-size:2rem">7.57</div><div class="edgl">CGPA / 10.0</div>
+        <div class="edp"><span class="edpl">Mathematics Major</span><span class="edpl">Mumbai</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" aria-label="Certifications">
+  <div class="con">
+    <div class="rev" style="margin-bottom:3rem">
+      <div class="stag"><i class="fas fa-certificate" aria-hidden="true"></i> Credentials</div>
+      <h2 class="stitle">Certifications &amp; <span class="grad">Badges</span></h2>
+    </div>
+    <div class="ceg">
+      <div class="cec rev"><div class="cei" aria-hidden="true"><i class="fas fa-award"></i></div><div><div class="cen">Career Essentials in Data Analysis</div><div class="ceb">Microsoft</div></div></div>
+      <div class="cec rev"><div class="cei" aria-hidden="true"><i class="fas fa-chart-area"></i></div><div><div class="cen">Introduction to Data Visualization</div><div class="ceb">Simplilearn</div></div></div>
+      <div class="cec rev"><div class="cei" aria-hidden="true"><i class="fas fa-building"></i></div><div><div class="cen">Data Analytics Job Simulation</div><div class="ceb">Deloitte Australia · Forage</div></div></div>
+      <div class="cec rev"><div class="cei" aria-hidden="true"><i class="fas fa-chart-bar"></i></div><div><div class="cen">Power BI for Data Analysts</div><div class="ceb">Microsoft Press · LinkedIn</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECRUITER CTA -->
+<section id="recruiter" aria-label="Hire Aditya">
+  <div class="con">
+    <div class="rci rev">
+      <div class="rav"><span class="rd" aria-hidden="true"></span> Available — Open to Full-time &amp; Remote Roles</div>
+      <h2 class="rtt">Let's Build Something <span class="grad">Exceptional</span></h2>
+      <p class="rdc">Seeking roles in <strong>Data Analysis</strong>, <strong>QA Automation</strong>, or <strong>Power BI Development</strong>. Open to Mumbai-based, hybrid, and fully remote positions across India and globally.</p>
+      <div class="rbs">
+        <a href="mailto:adityatiwari.at2000@gmail.com" class="btn bp"><i class="fas fa-envelope" aria-hidden="true"></i> Email Me</a>
+        <a href="https://www.linkedin.com/in/aditya-tiwari-601306174" target="_blank" rel="noopener noreferrer" class="btn bg"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+        <a href="Aditya_Tiwari_2026.pdf" download="Aditya_Tiwari_2026.pdf" class="btn bg"><i class="fas fa-download" aria-hidden="true"></i> Resume</a>
+      </div>
+      <div class="rtgs" aria-label="Skills keywords">
+        <span class="rtg">Selenium WebDriver</span><span class="rtg">QA Automation</span><span class="rtg">SQL</span>
+        <span class="rtg">Power BI</span><span class="rtg">Python</span><span class="rtg">API Testing</span>
+        <span class="rtg">Regression Testing</span><span class="rtg">Agile / Scrum</span>
+        <span class="rtg">Data Visualization</span><span class="rtg">ETL</span><span class="rtg">STLC</span>
+        <span class="rtg">Dashboard Development</span><span class="rtg">Fintech Analytics</span><span class="rtg">Streamlit</span>
+        <span class="rtg">Java</span><span class="rtg">TestNG</span><span class="rtg">Cucumber BDD</span>
+        <span class="rtg">Docker</span><span class="rtg">Jenkins CI/CD</span><span class="rtg">Selenium Grid</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact">
+  <div class="con">
+    <div class="cw">
+      <div class="rev">
+        <div class="stag"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get In Touch</div>
+        <h2 class="stitle">Let's <span class="grad">Connect</span></h2>
+        <p class="sdesc">Open to Data Analyst, QA Automation, and Power BI roles. I respond within 24 hours.</p>
+        <div class="cits">
+          <a href="mailto:adityatiwari.at2000@gmail.com" class="cit">
+            <div class="cico ip" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+            <div><div class="clb">Email</div><div class="cvl">adityatiwari.at2000@gmail.com</div></div>
+          </a>
+          <a href="tel:+918766864054" class="cit">
+            <div class="cico ic" aria-hidden="true"><i class="fas fa-phone"></i></div>
+            <div><div class="clb">Phone</div><div class="cvl">+91 87668 64054</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-tiwari-601306174" target="_blank" rel="noopener noreferrer" class="cit">
+            <div class="cico ia" aria-hidden="true"><i class="fab fa-linkedin-in"></i></div>
+            <div><div class="clb">LinkedIn</div><div class="cvl">aditya-tiwari-601306174</div></div>
+          </a>
+          <a href="https://github.com/adityatiwaricodes" target="_blank" rel="noopener noreferrer" class="cit">
+            <div class="cico ig" aria-hidden="true"><i class="fab fa-github"></i></div>
+            <div><div class="clb">GitHub</div><div class="cvl">adityatiwaricodes</div></div>
+          </a>
+        </div>
+      </div>
+      <div class="rev">
+        <form class="cf" id="cform" novalidate aria-label="Contact form">
+          <div class="fgr">
+            <div class="fg"><label for="fn">Name *</label><input type="text" id="fn" name="name" placeholder="Your name" required autocomplete="name"/></div>
+            <div class="fg"><label for="fe">Email *</label><input type="email" id="fe" name="email" placeholder="your@email.com" required autocomplete="email"/></div>
+          </div>
+          <div class="fg"><label for="fs">Subject</label><input type="text" id="fs" name="subject" placeholder="Opportunity / Collaboration / Question"/></div>
+          <div class="fg"><label for="fm">Message *</label><textarea id="fm" name="message" rows="5" placeholder="Tell me about the role or project…" required></textarea></div>
+          <button type="submit" class="csub" id="csub"><i class="fas fa-paper-plane" aria-hidden="true"></i><span id="cbt">Send Message</span></button>
+          <div id="fmsg" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fti">
+    <div class="ftl">Aditya Tiwari</div>
+    <nav class="ftls" aria-label="Footer links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
+      <a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="ftc">
+    <span>&copy; 2025 Aditya Tiwari &middot; Data Analyst &amp; QA Automation Engineer &middot; Mumbai</span>
+    <span>Built with precision &amp; purpose</span>
+  </div>
+</footer>
+
+<!-- MOBILE CTA BAR -->
+<div id="mcta" aria-label="Quick actions">
+  <a href="#contact" class="mh">Hire Me</a>
+  <a href="Aditya_Tiwari_2026.pdf" download="Aditya_Tiwari_2026.pdf" class="mc">Download CV</a>
+</div>
+
+<!-- AI CHATBOT -->
+<button id="aib" aria-label="Open AI assistant" aria-expanded="false" aria-controls="aip">
+  <i class="fas fa-robot"></i>
+</button>
+<div id="aip" role="dialog" aria-label="AI assistant about Aditya" aria-modal="true" aria-hidden="true">
+  <div class="aih">
+    <div class="aihi">
+      <div class="aiav" aria-hidden="true"><i class="fas fa-robot"></i></div>
+      <div>
+        <div class="aihn">Ask About Aditya</div>
+        <div class="aihs"><span style="width:6px;height:6px;background:var(--green);border-radius:50%;display:inline-block" aria-hidden="true"></span> AI Online</div>
+      </div>
+    </div>
+    <button class="aisc" id="aisc" aria-label="Close AI assistant"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="aich" id="aich">
+    <button class="aicp">Skills</button><button class="aicp">Experience</button>
+    <button class="aicp">Projects</button><button class="aicp">Education</button>
+    <button class="aicp">Availability</button>
+  </div>
+  <div class="aim" id="aim" aria-live="polite">
+    <div class="aimm bot">Hi! I'm Aditya's AI assistant. Ask me anything about his skills, experience, projects, or availability 👋</div>
+  </div>
+  <div class="aif">
+    <input type="text" id="aii" placeholder="Ask something…" aria-label="Ask about Aditya" maxlength="200"/>
+    <button id="ais" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<script>
+(function(){'use strict';
+
+/* LOADER */
+window.addEventListener('load',function(){setTimeout(function(){document.getElementById('loader').classList.add('gone')},1900)});
+
+/* THEME */
+var root=document.documentElement,tBtn=document.getElementById('tthm'),tIco=document.getElementById('thi');
+var theme=localStorage.getItem('at-theme')||'dark';
+function applyTheme(t){root.setAttribute('data-theme',t);tIco.className=t==='dark'?'fas fa-sun':'fas fa-moon';localStorage.setItem('at-theme',t)}
+applyTheme(theme);
+tBtn.addEventListener('click',function(){theme=theme==='dark'?'light':'dark';applyTheme(theme)});
+
+/* CURSOR — desktop only */
+if(window.matchMedia('(hover:hover)').matches){
+  var cd=document.getElementById('cd'),cr=document.getElementById('cr'),mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY},{passive:true});
+  (function tick(){
+    cd.style.left=mx+'px';cd.style.top=my+'px';
+    rx+=(mx-rx)*.13;ry+=(my-ry)*.13;
+    cr.style.left=rx+'px';cr.style.top=ry+'px';
+    requestAnimationFrame(tick);
+  })();
+  document.querySelectorAll('a,button,[role=button],.skd,.pc,.cec,.tli').forEach(function(el){
+    el.addEventListener('mouseenter',function(){document.body.classList.add('ch')});
+    el.addEventListener('mouseleave',function(){document.body.classList.remove('ch')});
+  });
+}
+
+/* SCROLL PROGRESS */
+var sb=document.getElementById('sb');
+window.addEventListener('scroll',function(){
+  var pct=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+  sb.style.width=Math.min(pct,100)+'%';
+},{passive:true});
+
+/* HAMBURGER */
+var hbg=document.getElementById('hbg'),mm=document.getElementById('mm');
+hbg.addEventListener('click',function(){
+  var open=mm.classList.toggle('open');
+  hbg.classList.toggle('open',open);
+  hbg.setAttribute('aria-expanded',String(open));
+  document.body.style.overflow=open?'hidden':'';
+});
+mm.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click',function(){
+    mm.classList.remove('open');hbg.classList.remove('open');
+    hbg.setAttribute('aria-expanded','false');document.body.style.overflow='';
+  });
+});
+
+/* NAV ACTIVE */
+var nas=document.querySelectorAll('.n-links a:not(.n-cta)'),secs=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',function(){
+  var cur='';
+  secs.forEach(function(s){if(window.scrollY>=s.offsetTop-150)cur=s.id});
+  nas.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+cur)});
+},{passive:true});
+
+/* REVEAL */
+var ro=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis')});
+},{threshold:.1});
+document.querySelectorAll('.rev,.revL,.revR').forEach(function(el){ro.observe(el)});
+
+/* SKILL BARS */
+var bo=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.bf').forEach(function(b){b.style.width=b.dataset.w+'%'});
+      bo.unobserve(e.target);
+    }
+  });
+},{threshold:.25});
+document.querySelectorAll('.skb').forEach(function(el){bo.observe(el)});
+
+/* COUNTERS */
+function countUp(el){
+  var target=+el.dataset.count,suf=el.dataset.suf||'',dur=1500,start=null;
+  (function step(ts){
+    if(!start)start=ts;
+    var p=Math.min((ts-start)/dur,1),e=1-Math.pow(1-p,3);
+    el.textContent=Math.floor(e*target)+suf;
+    if(p<1)requestAnimationFrame(step);
+  })(performance.now());
+}
+var co=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.querySelectorAll('[data-count]').forEach(countUp);
+      co.unobserve(e.target);
+    }
+  });
+},{threshold:.3});
+['hero','experience','github','recruiter'].forEach(function(id){
+  var el=document.getElementById(id);if(el)co.observe(el);
+});
+
+/* TYPING EFFECT */
+(function(){
+  var roles=['Data Analyst','QA Automation Engineer','Power BI Developer','Software Tester'];
+  var el=document.getElementById('tt'),ri=0,ci=0,del=false;
+  function tick(){
+    var w=roles[ri];
+    if(!del){ci++;el.textContent=w.slice(0,ci);if(ci===w.length){del=true;setTimeout(tick,2000);return}}
+    else{ci--;el.textContent=w.slice(0,ci);if(ci===0){del=false;ri=(ri+1)%roles.length;setTimeout(tick,450);return}}
+    setTimeout(tick,del?52:98);
+  }
+  setTimeout(tick,1400);
+})();
+
+/* CONTACT FORM */
+document.getElementById('cform').addEventListener('submit',function(e){
+  e.preventDefault();
+  var name=document.getElementById('fn').value.trim();
+  var email=document.getElementById('fe').value.trim();
+  var msg=document.getElementById('fm').value.trim();
+  var fmsg=document.getElementById('fmsg');
+  fmsg.className='';fmsg.style.display='none';
+  if(!name||!email||!msg){fmsg.textContent='Please fill in all required fields.';fmsg.className='er';return}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){fmsg.textContent='Please enter a valid email address.';fmsg.className='er';return}
+  var sub=document.getElementById('csub'),bt=document.getElementById('cbt');
+  sub.disabled=true;bt.textContent='Sending\u2026';
+  /* Wire up Formspree: replace action="#" with action="https://formspree.io/f/YOUR_ID" */
+  setTimeout(function(){
+    sub.disabled=false;bt.textContent='Send Message';
+    document.getElementById('cform').reset();
+    fmsg.textContent='\u2705 Message sent! I\u2019ll reply within 24\u00a0hours.';
+    fmsg.className='ok';
+    setTimeout(function(){fmsg.style.display='none';fmsg.className=''},6000);
+  },1200);
+});
+
+/* AI CHATBOT */
+var KB={
+  skills:["Aditya is skilled in SQL, Python (Pandas, Matplotlib), Power BI, Tableau, Selenium WebDriver, API Testing, and Agile/Scrum.","He specialises in data cleaning, EDA, dashboard design, and test automation frameworks."],
+  experience:["Aditya has 2+ years at DataDevice as a QA Automation Tester, reducing testing time by 25%, improving product quality by 15%, and achieving 95% overall test coverage."],
+  projects:["He built 4 projects: (1) HR Database Management System using advanced SQL, (2) Sales Analysis Dashboard in Power BI with DAX, (3) FinPulse — a live fintech analytics dashboard built with Python/Streamlit/Plotly, and (4) OpencartV1.0 — an enterprise Hybrid Automation Framework using Java, Selenium WebDriver, TestNG, Cucumber BDD, Docker Selenium Grid, and Jenkins CI/CD. All are on GitHub."],
+  education:["Aditya holds an MCA from Jain University (CGPA 9.30/10) and a BSc Mathematics from Thakur College, Mumbai (CGPA 7.57/10)."],
+  availability:["Aditya is actively looking for Data Analyst, QA Automation, and Power BI Developer roles. Open to Mumbai-based, hybrid, and remote positions.","Reach him at adityatiwari.at2000@gmail.com or +91 87668 64054."],
+  contact:["Email: adityatiwari.at2000@gmail.com | Phone: +91 87668 64054 | LinkedIn: /in/aditya-tiwari-601306174 | GitHub: github.com/aditya786786"],
+  certifications:["Certifications: Career Essentials in Data Analysis (Microsoft), Intro to Data Visualization (Simplilearn), Deloitte Australia Job Simulation (Forage), Power BI for Data Analysts (LinkedIn)."],
+  def:["I can tell you about Aditya's skills, experience, projects, education, or availability. What would you like to know?"]
+};
+function getReply(q){
+  q=q.toLowerCase();
+  if(/skill|tech|stack|python|sql|power.?bi|selenium|tool|language/.test(q))return KB.skills[Math.random()<.5?0:1];
+  if(/experience|work|job|datadevice|year|company/.test(q))return KB.experience[0];
+  if(/project|github|build|dashboard|database|hr|sales/.test(q))return KB.projects[0];
+  if(/edu|degree|university|college|mca|bsc|gpa|cgpa/.test(q))return KB.education[0];
+  if(/avail|open|hire|role|remote|position|look|opport/.test(q))return KB.availability[Math.random()<.5?0:1];
+  if(/contact|email|phone|linkedin|reach/.test(q))return KB.contact[0];
+  if(/cert|certif|microsoft|deloitte|forage/.test(q))return KB.certifications[0];
+  return KB.def[0];
+}
+var aib=document.getElementById('aib'),aip=document.getElementById('aip'),aisc=document.getElementById('aisc');
+var aim=document.getElementById('aim'),aii=document.getElementById('aii'),ais=document.getElementById('ais');
+var aich=document.getElementById('aich');
+function openAI(){aip.classList.add('open');aip.setAttribute('aria-hidden','false');aib.setAttribute('aria-expanded','true');aii.focus()}
+function closeAI(){aip.classList.remove('open');aip.setAttribute('aria-hidden','true');aib.setAttribute('aria-expanded','false')}
+aib.addEventListener('click',function(){aip.classList.contains('open')?closeAI():openAI()});
+aisc.addEventListener('click',closeAI);
+function addMsg(txt,type){
+  var d=document.createElement('div');d.className='aimm '+type;d.textContent=txt;
+  aim.appendChild(d);aim.scrollTop=aim.scrollHeight;
+}
+function showTyping(){
+  var d=document.createElement('div');d.className='ait';d.id='ait';
+  d.innerHTML='<span></span><span></span><span></span>';
+  aim.appendChild(d);aim.scrollTop=aim.scrollHeight;return d;
+}
+function sendMsg(txt){
+  txt=txt.trim();if(!txt)return;
+  addMsg(txt,'usr');
+  var t=showTyping();
+  setTimeout(function(){t.remove();addMsg(getReply(txt),'bot')},900+Math.random()*400);
+}
+ais.addEventListener('click',function(){var v=aii.value;aii.value='';sendMsg(v)});
+aii.addEventListener('keydown',function(e){if(e.key==='Enter'){var v=aii.value;aii.value='';sendMsg(v)}});
+aich.querySelectorAll('.aicp').forEach(function(c){
+  c.addEventListener('click',function(){sendMsg(c.textContent);aich.style.display='none'});
+});
+/* Close AI on Escape */
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&aip.classList.contains('open'))closeAI()});
+
+})();
+</script>
+</body>
+</html>
